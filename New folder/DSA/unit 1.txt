@@ -1,0 +1,2 @@
+parameter: variable in function declaration
+static and dynamic memory allocation

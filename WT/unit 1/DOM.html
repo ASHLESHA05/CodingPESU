@@ -1,0 +1,65 @@
+<!-- DOCUMENOBJECT MODEL -->
+<html>
+    <head>
+        <title>MY Page Title</title>
+        <style>
+            span{
+                color:blue;
+
+            }
+        </style>
+        <script>
+            function init(){
+                var p1=document.querySelector("p");
+                p1.onclick=change;
+                p1.ondblclick=chnageback;
+            }
+            function change(event){
+                document.querySelector("h2").style.color="red"
+            }
+            function chnageback(){
+                document.querySelector("h1").style.color="black"
+            }
+            p1.addEventListener("click",()=>{
+                document.querySelector("h1").style.fontsize="50px"
+            })
+            p1.addEventListener("click",()=>{
+                document.querySelector("h1").style.backgroundColor="green"
+            })
+            //these are ways to register event handler
+        </script>
+    </head>
+    <body onload="init()">
+        <h1 onmouseover="alert('you are here')">my page heading 1</h1>
+        <h2 onmouseover="change()"onmouseout="chnageback()">my page heading 2</h2>
+        <div id="div1">
+            <p>para 1</p>
+            <p>para 2</p>
+            <!-- we Can change the properties by entering thw position by using document.children[0...etc]  childrens are inside div -->
+<!-- acessing elements in dom : getElementByID("demo") -->
+        </div>
+        <script>
+           setTimeout(()=>{ 
+            var d1=document.querySelector("#div1");
+             pnew=document.createElement("p");
+            pnew.innerHTML="My new <span>paragraph</span>";
+            d1.appendChild(pnew)
+            setTimeout(()=>{
+               // d1.insertBefore(d1.firstChild,pnew);
+               // d1.replaceChild(d1.children[1],pnew);
+               //d1.removeChild(d1.lastChild)
+               //p.new.remove()
+            },2000)
+          setInterval(()=>{
+                 var colors=["red","blue","green","brown"];
+                 var rnd=Math.floor(Math.random()*colors.length);
+                 pnew.style.backgroundColor=colors[rnd];
+            },1000)
+           },2000);
+        </script>
+    
+        <!-- event handler -->
+        <button onclick="bgChange()">Press</button>
+        c
+    </body>
+</html>

@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <script>
+            function init(){
+                ti=setTimeout(()=>{
+                      document.querySelector("div").style.display="block"
+                },5000)
+                document.body.onmousemove=()=>{
+                      clearTimeout(ti)
+                   
+                      ti=setTimeout(()=>{
+                      document.querySelector("div").style.display="block"
+                },5000)
+                }
+
+}
+        </script>
+        
+    </head>
+    <body onload="init()">
+        <div style="display:none">You have been logged out!!</div>
+        <h1>Heading</h1>
+        <p>Paragraph</p>
+    </body>
+</html>

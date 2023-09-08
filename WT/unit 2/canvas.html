@@ -1,0 +1,39 @@
+<html>
+    <head>
+      <script>
+        function draw(){
+            var c1=document.querySelector("#c1");
+            var ctx=c1.getContext("2d");
+            ctx.beginPath();  //in order to disconnect line
+            var x=Math.floor(Math.random()*c1.width);
+            var y=Math.floor(Math.random()*c1.height);
+            var z=Math.floor(Math.random()*c1.width/4);
+            ctx.arc(x,y,z,0,2*Math.PI,true)
+            ctx.stroke()  //ctx.stroke()
+            ctx.closepath()
+        }
+        function move(){
+          document.querySelector("circle").cx.baseval.value+=10;
+        }
+      </script>
+    </head>
+    <body>
+        <canvas width="400px" height="400px" id="c1">
+              NOT SUPPORTED!!
+        </canvas>
+        <button onclick="draw()">draw circle</button>
+        <script>
+        
+        /*    setInterval(()=>{
+            draw()
+        },1000) */
+
+        </script>
+        <svg width="200px" height="400px">
+          <circle cx="100px" cy="200px" r="60px" fill="blue" stroke="yellow" stroke-width="5px"/>
+          </svg>
+
+         <button onclick="move()">move</button>
+          
+    </body>
+</html>

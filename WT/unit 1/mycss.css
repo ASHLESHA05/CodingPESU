@@ -1,0 +1,51 @@
+h1{
+    color:blue;
+    font-size:50px;
+}
+#newh1{
+   /* use any constrains property:value  */
+   padding:20px;
+   margin:30px;
+   border:1px solid black;  /* move the all items declared under newh1 100px top and 100 px left*/
+   position:sticky ;
+   top: 100px ; 
+   left:100px ;
+}
+.heading{
+    color:blue;
+}
+a:link{
+    color:red;
+}
+a:visited{
+    color:lightered;
+}
+a:active{
+    color:green;
+}
+
+div.items a{
+    color:brown;
+    font-weight:italic;
+}
+
+div >span{
+    background:DodgerBlue
+}
+p:first-line{
+    color:blueviolet                
+    /* the firstline will be in black of all para graph */
+}
+span{
+    color:yellow ;
+    position:sticky ;
+    top:-250px ;
+
+}
+article
+{
+ color:red
+}
+table, th, td {
+    border: 0.5px solid rgb(221, 12, 12);
+  } 

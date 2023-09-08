@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <script>
+      function init(){
+        var i1=document.querySelector("input");
+        i1.onchange=(event)=>{
+            document.querySelector("div").innerHTML=event.target.value;
+
+        }
+        i1.onfocus=showtip;
+        i1.onblur=hidetip;
+
+      }
+      function showtip(){
+        document.querySelector("div#d1").style.display="inline";
+      }
+      function hideip(){
+        document.querySelector("div#d1").style.display="none";
+      }
+      function checkS(){
+
+      }
+      function checkR(){
+        if(!confirm("Do u want to reset??"))
+          event.PreventDefault()
+        else
+          document.querySelector("div").innerHTML=""  
+      }
+      
+      </script>
+    </head>
+    <body onload="init()">
+        <form onsubmit="checkS()" onreset="checkR()">
+
+            <label>Age: </label><input type="range" min="18" max="100"/><div  style="display:inline"></div>
+            <div id="d1" style="display:none">Enter ypor age (18-100)</div>
+            <button type="'submit">Submit</button><button type="reset">reset</button>
+        </form>
+    </body>
+</html>

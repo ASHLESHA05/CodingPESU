@@ -1,0 +1,102 @@
+Node.js  is the environment used to use javascript
+mongoDB and CouchDB :  are th 2 databases
+javascript can be inserted into the doccuments using the tag <script>
+    if we give in head section,scripts run before page is displayed
+script can be loaded from ext file
+
+<script src="myscript.js></script>
+comments in javascript is same as that of c
+not mandate of using semicolon
+var: function or global scope
+let: block scope
+const:block scope   constant var
+
+functions in javascript:
+    function name(parameters)
+    {
+        statements
+    }
+
+    let name=function(parameters)
+    {
+        statements
+    }
+    or
+    let name=(parameters)=>{
+        statements
+    }
+
+ for loop:
+        for(i in args) //if args is packed elemnts then i is index...insted of in if we use of it will give the value directly
+
+ console.log()  :used to print values to console i.e. observable in inspect page o fa wweb site
+ GLOBAL OBJECTS SUPPORTED:  Math,Number,String,Array,Date,window,doccument
+ let arr=new Array(100)  :created an array of 100 elements
+ let arr=new Array(10,20)  :creates an array of 2 elements
+
+ var alist=[1,"hello",5.....]
+
+const arr=[1,2]   //array of 2 elements
+arr.length=7     //set array length to 7 initially it was 2
+//now arr=[1,2,<empty items>]
+Note: similary we can decrease the size of array
+console.log(typeof i +i)
+//String 0   //index of array is of type String
+
+ArrayMethods:
+  push , pop , 
+  shift //removes 1st elements
+  unshift //adds elements in begining
+  indexOf -return index
+  concat , slice(a,b)
+
+String:
+  slice(a,b)
+  split()  //convert string at array of string
+  substr(start,length)   //from start ,len number of elements
+
+var d1=new Date()
+d1.getDate()
+d1.getTime()
+//in order to change for d1 d1.setDate(......)
+
+Math method
+    Math.E   :eulers constant
+    Math.PI
+    Math.SQRT(number)
+    abs,ceil,floor,pow
+
+    var r=Math.random()  //returns an random number between o and 1
+
+setTimeout(function_name,1000,"parameters") //after 1 second it will call the function with specified parameters
+setTimeout(function_name)
+
+or
+setTimeout(()=>{
+    document.write("Time up....")
+},3000)   //after creating timer controll goes out of timer and executes next statements untill specified time
+document.write("Time starts..")
+
+var count=0;
+setInterval(()>{
+    document.write(count)
+    count++;
+    if(count==10)
+      clearInterval(timer)
+
+},1000)
+
+//************************************
+<script>
+    var o1=new Object();
+    o1.name="vikram";
+    o1["landingDate"]=new Date(2023,7,23);
+    var o2=o1;
+    document.write(o2["landingDate"]);
+</script>
+
+DOM;
+
+
+EVENT:
+  Event Object Properties

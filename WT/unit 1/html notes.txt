@@ -1,0 +1,47 @@
+ul- unorderd list
+ol-orderd list
+columspan 
+subscripts and superscripts
+   subscript:
+      x<sub>2</sub>  it craetes an variable x with sbuscript 2
+      x<sup>2</sup>  it crates X with power 2
+GIF: GRAPTHIC INTERCHANGE FORMAT
+JPEG: Joint Photographic Experts Group
+PNG: Portable Network Graphics
+send request to the script: 
+ 
+ <form method="get" action="dummy.php"  target="-blank'>  </form>     //info go in the form of url   send as name value pair
+ <form method="post" action="dummy.php"  target="_blank"> </fomm>     //input parameters will go in the form of mesg whivh willl not be displayed innt he url
+ <input type="text">   //creates an texxt box
+ <button>submit</button>  //creates  submit button
+ <input type="radio" name=" " value="">
+ <input type="checkbox" name="" value="">
+ //Theese things are to be embedded in label
+<input type="email"  name="email" required>   /indicates required field
+<input type="numbers" name='num" value="nu>
+<input type="date">
+<input type="age" paceholder="numbers 1-100" pattern="[0-9]?[0-9]>*  //using * at end will amrk *
+<label>salary</label><input type="range" min="100" max="100000" step="100">   //by this we can input in the multiples of 100 itself   
+//range type will provide slider
+
+inline styling:
+  <h1 style="color:red;font..... "></h1>   //at element level
+
+<style>          //at doc level
+   h1{
+      color:blue
+      font-size:50
+   }      
+</style>
+
+scroll:
+<div>  :same as class..its a divition use to group th eelements
+<span>  :its used to break the group of elements.i.e the thigd or text used under span 
+        will have differed styling than div: based on what user gives
+<article>
+
+
+in css file:
+position:fixed or absolute or relative etc
+      fixed: will be fixed at that postion  when we scroll also
+      sticky: till the parent element is there it will stay then it will go

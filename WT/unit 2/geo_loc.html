@@ -1,0 +1,49 @@
+<!-- geo locations -->
+<!-- navigatior.geolocations obj allows us to access geo locations  -->
+
+<!--  
+<html>
+    <head>
+      <script>
+        var temp=0
+        function read(){
+            //navigator.geolocation.getPosition(show,error)
+            navigator.geolocation.watchPosition(show,error)
+        }
+        function show(position){
+            if(temp<5) temp++
+            else navigaton.geolocation.clearWatch();
+
+            document.querySelector("div").innerHTML="Lat: "+position.coords.latitude+" Long: "+position.coords.longitude;
+        }
+        function error(err){
+            document.querySelector("div").innerHTML="Error: "+err.message;
+        }
+      </script>
+    </head>
+    <body>
+        <button onclick="read()">Get position</button>
+        <div></div>
+    </body>
+</html>
+
+-->
+<!-- web worker -->
+<html>
+    <head>
+        <script>
+            var wkr=new Worker("worker.js")
+            function send(){
+                wkr.postMessage("abc")
+            }
+            wkr.onmessage=show;
+            function show(event){
+                document.querySelector("div").innerHtml=event.data;
+            }
+        </script>
+    </head>
+    <body>
+        <button onclick="send()">Send message</button>
+        <div></div>
+    </body>
+</html>

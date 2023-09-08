@@ -1,0 +1,32 @@
+<html>
+    <head>
+      <script>
+        var vd;
+        function init(){
+               var vd=document.querySelector("vedio");
+               vd.play()
+            setInterval(()=>{
+                var vd=document.querySelector("vedio");
+                vd.currentTime=Math.floor(Math.random()*(v1.duration-3));
+            },3000)
+        }
+        function back(){
+            vd=document.querySelector("vedio")
+            vd.currentTime=vd.currentTime-5;
+        }
+        function promote(){
+            var p=document.querySelector("progress");
+            p.value+=1;
+        }
+      </script>
+    </head>
+    <body onready="init()" bgcolor="orange">
+        <video controls="no">
+            <source src="vedio_1.mp4" type="video/mp4"/>not supported</video>
+        <button onclick="back()">Back</button>
+        <label>semesters completed:</label>
+        <progress value="2" max="8"></progress>
+        <button onclick="promote()">promote</button>
+
+    </body>
+</html>

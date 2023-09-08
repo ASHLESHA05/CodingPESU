@@ -1,0 +1,23 @@
+abstraction: process of removing the imlementation part
+encapsulation: binding together of data and functions together
+inheritence:inheriting properties of one class by other class
+polymorphism: ability to take many forms(static and dynamic )eg:same function intaking int at some time and float at another time
+
+--> two or mode classws can be used inside different namespace and function inside the class can be asessed by
+    returnn_type namespace_name::class_name::fun_name(){
+        }
+when we use an variabble with in namespace it will try to fetch value of a in same namespace
+if we delare a var in a namespace then printing it wrt main it will give an error
+
+-->creating alias in namespace 
+     namespace ons=outer
+     namespace ins=outer::inner   //instead of inner we can use ins..
+
+-->const int *ptr=&a;    //pointer is pointing to constant  variable we cant change the value
+--> int *const ptr=&a;   //now we cant change  address; //here pointer address is constant
+-->const int *const ptr=&a  //cant change either the address or a value
+-->a constant cannot be uninitialised during declaration
+
+// function overloading donot work if we hardcode the value with both float
+   if ont int and onre float is passed then float is typecasted ti an integer
+   

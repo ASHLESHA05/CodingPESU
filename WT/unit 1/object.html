@@ -1,0 +1,93 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <script>
+            //25/08/2023
+            var o1=new Object();
+            o1.name="vikram";
+            o1["landingDate"]=new Date(2023,7,23);
+            var o2=o1;
+            document.write(o2["landingDate"]+"<br>");
+
+            o1.getDetails=function(){
+                return this.name+" "+this.landingDate+"<br>";
+            }
+            document.write(o1.getDetails());
+
+            var o3={
+                "name":"vikranth",
+                "addr":"south Pole moon",
+                "getDetails": function(){
+                    return this.name +" " +this.addr+"<br>"
+                }
+            };
+            document.write(o3.getDetails());
+ 
+            function shoppingItems(name,price,qty){
+                this.sname=name;
+                this.sprice=price;
+                this.sqty=qty;
+                this.getDetails=function(){
+                    return this.sname+" "+this.sprice+" "+this.sqty;
+                }
+            }
+            var si1=new shoppingItems("Reebok","Rs:10,000","1")
+            var si2=new shoppingItems("Reebok","Rs:10,000","1")
+            document.write(si1.getDetails())
+
+            shoppingItems.prototype.desc="Sports shoes";
+            document.write(si2.desc)
+
+            var p1= new Object();
+            p1.name="Vijay";
+            p1.addr="BSK III Stage";
+
+            var s1=Object.create(p1,{"name":{"value":"vishal"},"srn":{"value":"PES1UG22CS118"}})//changing the value of objects
+            
+            //constructor approach
+            function Person(name,addr){
+                this.pname=name;
+                this.paddr=addr;
+            }
+            function Student(name,addr,srn){
+                Person(name,addr);
+                this.ssrn=srn;
+            }
+            var s1=new Student("Vijay","BSK","PES1UG22CS118")
+            Student.prototype=Person;
+            Student.prototype.constructor=Student;
+
+
+            class Person{
+                constructor(name,addr){
+                    this.name=name;
+                    this.addr=addr;
+                }
+                getDetails(){
+                    return this.name+" "+this.addr
+                }
+            }
+            class Student extends Person{
+                constructor(name,addr,srn){
+                    super(name,addr);    //it will call the super class i.,e person
+                    this.srn=srn;
+                }
+            }
+            //28/08/2023
+            var o1=new Object()
+              o1.name="abc";
+              o1.srn="pes1202";
+              o1.cgpa=8.8;
+            var s1=[1,o1]
+            document.write(s1)
+            
+
+      
+        
+
+
+        </script>
+    </body>
+</html>

@@ -1,0 +1,25 @@
+//Audio elements
+<audio controls="c1">
+ <source src="" type="audio/mp3 or wav or ogg"/>
+//if 1st link is not of given formattt then 2nd link given will work  <src="" />
+-->autoplay
+-->controls : controls will be defined such as play button 
+-->preload
+-->loop
+-->src :
+
+//Vedio elements
+<vedio width="" height=" " controls="controls">
+-->audio  value: muted
+
+<progress value="" max=" "></progress>
+<button onclick="promote()">promote</button>
+
+//CANVAS 
+-->use js to draw graphics on a web page
+
+
+//web worker
+-->web worker dont have access to the DOM
+-->send message via postMessage() function
+-->Creates timers using SetTimeout() 

@@ -1,0 +1,35 @@
+<!-- jQuery -->
+<!-- we can use to to add an src to the script -->
+<html>
+    <head>
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+        <script>
+            $(document).ready(()=>{
+                 $("#d1 > p").css("color","blue")
+                 var p1=document.createElement("p")
+                 $(p1).html("New Para <span>Added</span> 1")
+
+                 var p2=document.createElement("p")
+                 $(p2).html("New Para <span>Added</span> 2")
+
+                 $("#d1 >p").after($(p1),$(p2))
+                 var str=$(p1).text()+"Modified";
+                 $(p1).html(str);
+                 $("button").click((event)=>{
+                    $(event.target).html("I was Clicked")
+                 })
+                 $("p").click((event)=>{
+                    console.log($(event.target))
+                    $(event.target).hide();
+                 })
+            })
+
+        </script>
+        <!-- statement structure: $("div").addClass("xyz") -->
+    </head>
+    <body>
+        <div id="d1">
+            <p>Initial Para</p>
+        </div>
+    </body>
+</html>

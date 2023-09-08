@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <title>First page</title>
+    </head>
+    <body>
+        <h1>HTML</h1>
+        <p>hello</p>
+         <!-- ul is unordered list ans ol is drderd list i.e., obj are displayed with numbers  -->
+        <ul>
+            <li>hei</li>
+            <li>abc</li>
+        </ul>
+
+        <p>movies</p>
+        
+        <ol>
+            <li>MI</li>
+            <li>PI</li>
+        </ol>
+        <dl>
+            <dt>MY collage</dt>
+            <dd>PES</dt>
+            <dt>pu</dt>
+            <dd>good</dd>    
+
+        </dl>
+        <img src="">
+        <a href=""></a>
+    </body>
+</html>

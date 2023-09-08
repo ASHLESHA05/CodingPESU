@@ -1,0 +1,70 @@
+<html>
+    <head>
+        <script>
+          // function add(a,b){
+            //return a+b;}
+            add() //function can be called before declaring it
+            // but' let add=function() ' and calling and before declaring add it gives an error 
+            function add(...args){
+            sum=0;
+            for(i of args){
+              //console.log(args[i])
+               sum+=i}
+            return sum;   
+           }
+        </script>
+    </head>
+    <body>
+        <script>
+           var m=add(2,3,4,5)   //function defination 
+           //Note: if more number of parameters are given then it just ignores it
+           //Note: if less number of parameters are given then  NaN
+           document.write(m+"<br>")
+           
+
+          var a1=[1,2,"3",4,44]
+          var a2=new Array(10)
+          var a3=new Array("2",3,4,"5")
+          document.write(a1.length+" "+a2.length+" "+a3.length+"<br/>")
+
+          a1.push("23");  
+          a3.unshift("1");
+          a2[0]=55; 
+          a2[4]= new Number(10)
+          a2[7]=new Boolean(1)
+          document.write(a1.length+" "+a2.length+" "+a3.length+"<br/>")
+          document.write(a2+"<br>")
+          
+          a3.length=20;
+          document.write(a3.join(";"))  //join will add the mark specified between two array elements
+
+          //In array sorting it considersevery elemenys as strings
+          a1.sort()  //sort as string
+          a1.sort((a,b)=>{ return b-a;}) //sort as numbers
+
+          document.write("<br>"+a1+"<br>")
+          let str1="1;2;3;4;5"
+          let a4=str1.split(";")
+          document.write(a4)
+          let str2="ThisisPES";
+          let a5=str2.split("")
+          document.write(a5+"<br>")
+
+          var d1=new Date()
+          var d2=new Date(2023,10,23)
+          var d3=new Date(2023,20,23,7,50,50)
+          document.write(d1+"<br>") // returns weekday, onth,date,year,time,gmt
+          document.write(d1.valueOf())
+
+          var r=Math.random()
+          document.write("<br>"+r+"<br>")
+          var count=0;
+          /*setInterval(()=>{
+              document.write(count+"<br>")
+              count++;
+
+          },1000)*/
+        </script>
+    </body>
+
+</html>

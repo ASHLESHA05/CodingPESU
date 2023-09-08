@@ -1,0 +1,10 @@
+Series(list_name)  //to create an series with of list elements
+Series(list_name,index=[...]) //by default index would be 0,1,2..here we can change it as we want
+Series(dict_name,index=[...]) // here dictionary keya will be heading of respective column
+
+a pandas dataframe is a 2D data structure
+df=pd.DataFrame(dict_name)
+df.loc[position]  //loc is used to return the elements of position mentioned from every column including dict_name
+
+//load csv file
+df=pd.read_csv("data.csv") //this is used to read csv file

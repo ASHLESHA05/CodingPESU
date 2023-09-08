@@ -1,0 +1,52 @@
+<html>
+    <head></b></head>
+    <body>
+        <p>Tis is a para</p>
+        <script type="text/javascript">
+            var a;
+            var b=10;
+            document.write("<p>This is output</p>")
+           // document.write(a);
+            document.write(b);
+            document.write(b+"3");  //convert number to string
+            document.write(b-"3"); 
+             //convert string  to numbers
+           // document.write(typeof(a))
+            document.write(typeof(b));
+
+    //exlicit conversion
+        // 1: arithmetic operations
+        var str="3";
+        var m=str-0;  // insted of - we can also use * or / but we have to do it wrt 1
+        
+        //parseInt and parseFloat
+        var n=parseInt("3.0");  //3
+        var o =parseFloat("3.24a")   //3.24
+        var p=parseFloat("a3.24a") 
+          //NaN
+        if(isNaN(p))
+          document.write("p is not a number")
+         else
+          document.write(typeof(p)+" "+p) 
+        //number constructor
+        document.write("<br>")
+        var q=new Number("3.14")
+        document.write(typeof(q))
+    
+        // Dialog boxes -avoid them
+        // promt,confirm and alert
+        var age=prompt("enter your age ",0)
+        document.write("<br>next year you will be "+(age-0+1)) //-0 is used to convert string to int 
+        var str1=3+"";
+        var str2=new String(3);
+        document.write("<br>")
+        document.write(1+2+"3"+4+5)  //traverse from lefft t right and once it finds string it concatinate it to other
+        document.write
+
+       //strict equality
+       console.log(1==1)  //outputs true or false based on condition
+       
+
+        </script>
+    </body>
+</html>

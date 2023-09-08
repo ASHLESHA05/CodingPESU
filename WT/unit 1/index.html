@@ -1,0 +1,31 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <p>student info</p>
+        <form method="get" action="dummy.php" target="-blank">
+
+        <label>Name:</label><input type="text" name="username"/>
+        <label>Address:</label><textarea name="add" row="10" colum="15"></textarea>
+        <input type="radio" name="select" value="s"/>
+        
+        <input type="checkbox" name="hob" value="football"/>
+        <label>cities visited</label>
+        <select name="ct" multiple size="2">
+            <option value="ny">new york</option>
+            <option value="dl">delhi</option>
+        </select>
+        <button type="submit">submit</button>
+        <button type="reset">Reset details</button>
+        <button>hai</button>
+        <script>
+            var v1=new Object()
+            var s1=Object.create(v1,{"name":{"value":"abc","value":"pqr"},"srn":{"value":"PES1220","value":"pes1202"},"cgpa":{"value":"9.0","value":"9.5"}});
+            var s2=Object.create(v1,{"name":{"value":"abc","value":"pqr"},"srn":{"value":"PES1220","value":"pes1202"},"cgpa":{"value":"9.0","value":"9.5"}});
+            document.write(s1.name)
+        </script>
+    </form>
+    </body>
+
+</html>
