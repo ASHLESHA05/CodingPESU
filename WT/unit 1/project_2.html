@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script>
+        function getInput() {
+           
+            let userInput1 = document.getElementById('t1').value;
+            let userInput2 = document.getElementById('t2').value;
+            
+        
+            var table = document.getElementById("myTable");
+
+            let newRow = document.createElement("tr");
+            let cell1 = document.createElement("td");
+            let cell2 = document.createElement("td");
+
+
+            cell1.innerText = userInput1;
+            cell.innerH
+            cell2.innerText = userInput2;
+            newRow.appendChild(cell1);
+            newRow.appendChild(cell2);
+
+            table.appendChild(newRow);
+            document.getElementById('t1').value = "";
+            document.getElementById('t2').value = "";
+        }
+        function change(event){
+                document.querySelector("h2").style.color="red"
+            }
+    </script>
+</head>
+<body>
+    <table>
+        <tr>
+            <td>
+                <label>Name:</label>
+                <input type="text" id="t1" name="in1" required>*
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label>SRN: </label>
+                <input type="text" id="t2" name="in2" required>*
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <button onclick="getInput()">ADD</button>
+            </td>
+        </tr>
+    </table>
+    <table border="1" style="width:50%" id="myTable">
+        <tr>
+             <th>Name</th>
+             <th>SRN</th>
+        </tr>
+    </table>
+</body>
+</html>

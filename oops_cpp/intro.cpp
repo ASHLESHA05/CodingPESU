@@ -39,19 +39,25 @@ namespace second
 { 
     int a=10;
 }
-void add(float x,float y){
+void add(double x,double y=1.0){
     cout<<x+y;
 }
-void add(int x,int y){
-    cout<<x+y;
+void add(int x){
+    cout<<x;
 }
-
+int& ret()
+{
+    static int x=10;  //using static it allows us to acess through the variables ..
+    return x;
+}
 int main()
 {
     //cout<<::a<<endl; //:: a is given to specify standard 
     //cout<<first::a<<endl;
     //cout<<second::a<<endl;
-    ssss add(5,6.2);
+    add(6.2);
+    int &a=ret();
+    //NOTE : is we pass value to a function where a function parameter is of type address then address of a gets copied to the parameter.
 
 }
 
